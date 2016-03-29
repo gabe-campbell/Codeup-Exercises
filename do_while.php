@@ -1,20 +1,22 @@
-<?php 
-  
-  // $a = 0;
-  // do {
-  //   echo "$a\n";
-  //   $a += 2;
-  // } while ($a <=100)
+<?php
 
-  // $a = 100;
-  // do {
-  //   echo "$a\n";
-  //   $a -= 5;
-  // } while ($a >= -10)
+// $test = 0;
 
-  $a = 2;
-  do {
-    echo "$a * $a\n";
-      $a *= $a;
-  } while($a <= 1000000)
-?>
+// do {
+// 	echo $test . PHP_EOL;
+// 	$test++;
+// } while ($test <= 100);
+
+// $test = 100;
+
+// do {
+// 	echo $test . PHP_EOL;
+// 	$test -= 5;
+// } while ($test >= -10);
+
+$test = 2;
+
+do {
+	echo $test . PHP_EOL;
+	$test *= $test;
+} while ($test < 1000000);
