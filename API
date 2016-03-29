@@ -1,0 +1,16 @@
+API
+
+Input::has('username')
+Input::get('username')
+Input::escape('username');
+
+Log::logMessage('INFO', 'user logged in')
+Log::info('user logged in')
+Log::error('user login failed')
+
+Auth::check();
+Auth::attempt($username, $password);
+Auth::user();
+Auth::logout();
+
+Automobile::getNumberOfCars

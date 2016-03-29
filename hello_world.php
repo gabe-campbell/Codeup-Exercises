@@ -1,9 +1,7 @@
 <?php
 
-$firstName = "Gabe";
-$lastName = "Campbell";
+$first_name = 'Gabe';
+$last_name = 'Campbell';
 
-$phrase = "Hello, world!";
-
-echo("$firstName $lastName says: $phrase");
-?>
+$full_name = $first_name . ' ' . $last_name;
+echo "Hello, my name is " . $full_name . PHP_EOL;
