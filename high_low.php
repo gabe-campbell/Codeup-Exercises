@@ -1,6 +1,9 @@
 <?php
-$min = 1;
-$max = 100;
+
+var_dump($argc);
+var_dump($argv);
+$min = $argv[1];
+$max = $argv[2];
 
 // do {
 // 	$random = rand($min, $max);
