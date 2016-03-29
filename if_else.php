@@ -1,8 +1,16 @@
 <?php
 
-$a = 5;
-$b = 10;
-$c = '10';
+// $a = 5;
+// $b = 10;
+// $c = '10';
+
+// $a = 10;
+// $b = 5;
+// $c = '5';
+
+$a = 10;
+$b = 5;
+$c = 5;
 
 // TODO: Shorten these two if statements to a single if/else
 // if ($a < $b) {
