@@ -21,14 +21,17 @@ $max = 100;
 // } while (1 == 1);
 
 do {
+	$round = 0;
 	$random = mt_rand($min, $max);
 
 	do {
 		fwrite(STDOUT, "Guess? ");
 		$guess = fgets(STDIN) . PHP_EOL;
+		$round++;
 		if ($guess == $random) {
 			fwrite(STDOUT, "You Win! ") . PHP_EOL;
-			fwrite(STDOUT, "Hit enter to play again") . PHP_EOL;
+			fwrite(STDOUT, "It took you $round guesses." . PHP_EOL);
+			fwrite(STDOUT, "Hit enter to play again" . PHP_EOL);
 			fgets(STDIN);
 		} elseif ($guess > $random) {
 			fwrite(STDOUT, "Lower! " . PHP_EOL);
