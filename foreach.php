@@ -34,8 +34,24 @@
 // }
 $things = array('Sgt. Pepper', "11", null, array(1,2,3), 3.14, "12 + 7", false, (string) 11);
 
+// foreach($things as $thing) {
+// 	if (is_scalar($thing)) {
+// 		echo $thing . PHP_EOL;
+// 	}
+// }
+
 foreach($things as $thing) {
-	if (is_scalar($thing)) {
-		echo $thing . PHP_EOL;
+	if (is_integer($thing)) {
+		echo "Integer" . PHP_EOL;
+	} elseif (is_float($thing)) {
+		echo "Float" . PHP_EOL;
+	} elseif (is_bool($thing)) {
+		echo "Boolean" . PHP_EOL;
+	} elseif (is_array($thing)) {
+		echo "Array" . PHP_EOL;
+	} elseif (is_null($thing)) {
+		echo "Null" . PHP_EOL;
+	} elseif (is_string($thing)) {
+		echo "String" . PHP_EOL;
 	}
 }
