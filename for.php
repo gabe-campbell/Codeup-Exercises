@@ -7,8 +7,12 @@ $numberTwo = fgets(STDIN);
 fwrite(STDOUT, "Enter a number to increment by" . PHP_EOL);
 $increment = fgets(STDIN);
 
-echo "\nNumber One: {$numberOne}Number Two: {$numberTwo}";
-
-for ($i = (int)$numberOne; $i < (int)$numberTwo; $i+=$increment) {
-	echo $i . PHP_EOL;
-};
+if (!is_null($increment) && $increment != 0) {
+	for ($i = (int)$numberOne; $i <= (int)$numberTwo; $i+=(int)$increment) {
+		echo $i . PHP_EOL;
+	}
+} else {
+	for ($i = (int)$numberOne; $i <= (int)$numberTwo; $i++) {
+		echo $i . PHP_EOL;
+	}
+}
